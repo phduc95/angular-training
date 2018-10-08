@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,5 +16,14 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
 
+<section>
+  <header>
+    <h1>Media Watch List</h1>
+    <p class="description">Keeping track of the media I want to watch.</p>
+  </header>
+  <!-- binding target -->
+  <media-item [mediaItem]="firstMediaItem"
+  (delete)="onMediaItemDelete($event)"></media-item>
+</section>
